@@ -24,7 +24,7 @@
     "build": "/home/site/wwwroot/node_modules/react-scripts/bin/react-scripts.js build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "/home/site/wwwroot/node_modules/http-server/bin/http-serve --port 3000 build",
+    "serve": "/home/site/wwwroot/node_modules/http-server/bin/http-server --port 3000 build",
     "start:prod": "npm run build && npm run serve"
   },
   "eslintConfig": {
