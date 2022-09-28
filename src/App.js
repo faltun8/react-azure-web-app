@@ -63,7 +63,7 @@ function App(props) {
       {apiStatus === false && <div>Error: {apiError.trim()}</div>}
 
       {apiStatus === true && (
-        <div>
+        <div className="header">
           <h2 id="title">Simple app</h2>
           <p>Server: Expressjs and MongoDB</p>
           <p>Client: React (create-react-app)</p>

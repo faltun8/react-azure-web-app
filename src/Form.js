@@ -25,7 +25,7 @@ const Form = ({ addOne }) => {
 
   return (
     <div>
-      <form className="commentForm" onSubmit={onSubmitHandler}>
+      <form className="header" onSubmit={onSubmitHandler}>
         <input
           autoFocus
           type="text"

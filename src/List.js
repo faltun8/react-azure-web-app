@@ -2,11 +2,13 @@ import React from "react";
 
 function List({ list, deleteOne, deleteAll }) {
   return (
+    <div>
+      <h2>Jobs list</h2> 
     <table>
       <thead><tr>
         <th>Name</th>
         <th>Job</th>
-        <th>Delete {list.length > 1 && <button onClick={deleteAll}>all</button>}</th>
+        <th>{list.length > 1 && <button className="delete" onClick={deleteAll}>Delete all</button>}</th>
         </tr>
       </thead>
       <tbody>
@@ -18,7 +20,7 @@ function List({ list, deleteOne, deleteAll }) {
             <td>{item.name}</td>
             <td>{item.job}</td>
             <td>
-              <button onClick={() => deleteOne(id)}>X</button>
+              <button className="delete" onClick={() => deleteOne(id)}>X</button>
             </td>
           </tr>
           
@@ -26,6 +28,7 @@ function List({ list, deleteOne, deleteAll }) {
       })}
       </tbody>
     </table>
+    </div>
   );
 }
 export default List;
